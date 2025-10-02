@@ -8,7 +8,7 @@ class Penjualan extends Model
 {
     protected $guarded = [];
 
-    public function pelanggans()
+    public function pelanggan()
     {
         return $this->belongsTo(
             Pelanggan::class, 'pelanggan_id', 'id'
@@ -18,8 +18,9 @@ class Penjualan extends Model
     public function penjualanDetails()
     {
         return $this->hasMany(
-            PenjualanDetails::class, 'penjualan_id', 'id'
+            PenjualanDetail::class, 'penjualan_id', 'id'
         );
     }
 
-}
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+

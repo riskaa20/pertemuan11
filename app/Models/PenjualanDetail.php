@@ -10,12 +10,12 @@ class PenjualanDetail extends Model
 
     public function penjualans()
     {
-        return $this->belongTo(
+        return $this->belongsTo(
             Penjualan::class, 'penjualan_id', 'id'
         );
     }
 
-    public function barangs()
+    public function barang()
     {
         return $this->belongsTo(
             Barang::class, 'barang_id', 'id'

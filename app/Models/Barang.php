@@ -11,7 +11,7 @@ class Barang extends Model
     public function penjualanDetails()
     {
         return $this->hasMany(
-            PenjualanDetails::class, 'barang_id', 'id'
+            PenjualanDetail::class, 'barang_id', 'id'
         );
     }
 
